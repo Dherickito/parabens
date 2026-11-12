@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff9f5">
+    <meta name="description" content="Um álbum de carinho e homenagens preparado por toda a família para celebrar você.">
+    <title>Para você, com todo o nosso amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./messages.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="ambient" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Página inicial"><span class="brand-mark">♡</span><span>com todo amor</span></a>
+      <button class="music-button" type="button" aria-pressed="false"><span class="music-icon" aria-hidden="true">▶</span><span class="music-label">Nossa trilha</span></button>
+    </header>
+    <main id="conteudo">
+      <section class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span>um presente de toda a família<span class="eyebrow-line"></span></span>
+          <h1>Feliz aniversário,<br><em>nosso amor!</em></h1>
+          <p>Hoje é o seu dia, mas quem ganhou o presente fomos nós por ter você em nossas vidas.</p>
+          <a class="button button-primary" href="#mensagem">Começar essa homenagem <span aria-hidden="true">↓</span></a>
+          <span class="hero-note">feito com amor, pensado para você <span>♡</span></span>
+        </div>
+        <div class="hero-portrait reveal">
+          <div class="portrait-frame portrait-frame-main">
+            <img src="./images/familia/principal.jpeg" alt="Uma fotografia especial da família reunida" data-fallback="family">
+            <div class="photo-placeholder" aria-hidden="true"><span class="placeholder-flower">✿</span><span>O nosso melhor lugar<br>é ao seu lado</span></div>
+          </div>
+          <span class="photo-caption">nossa família, nosso maior presente</span>
+          <span class="hero-sparkle sparkle-one" aria-hidden="true">✦</span><span class="hero-sparkle sparkle-two" aria-hidden="true">✧</span>
+        </div>
+        <span class="hero-deco hero-deco-left" aria-hidden="true">✿</span><span class="hero-deco hero-deco-right" aria-hidden="true">✳</span>
+      </section>
+      <section class="family-note section-wrap" id="mensagem">
+        <div class="section-kicker reveal"><span>01</span><span class="kicker-rule"></span>com carinho, de todos nós</div>
+        <div class="note-card reveal">
+          <span class="note-ornament" aria-hidden="true">“</span>
+          <div class="note-content">
+            <h2>Uma mensagem de quem<br>mais te ama <span class="inline-heart">♥</span></h2>
+            <p class="family-message"></p>
+            <p class="signature">Com todo o nosso amor, <span>sua família</span> <span class="inline-heart">♥</span></p>
+          </div>
+          <span class="note-flower" aria-hidden="true">✿</span>
+        </div>
+      </section>
+      <section class="memories-section section-wrap">
+        <div class="section-kicker reveal"><span>02</span><span class="kicker-rule"></span>um álbum cheio de carinho</div>
+        <div class="memories-heading reveal">
+          <h2>O nosso melhor presente<br><em>é ter você.</em></h2>
+          <p>Em cada foto, um pedacinho do amor e da admiração que sentimos por você.</p>
+        </div>
+        <div class="album-group">
+          <h3 class="album-title reveal"><span class="album-flower" aria-hidden="true">✿</span> Um carinho só seu</h3>
+          <div class="memory-grid" data-album="mother"></div>
+        </div>
+        <div class="album-group">
+          <h3 class="album-title reveal"><span class="album-flower" aria-hidden="true">✿</span> Nossa família, com você no coração</h3>
+          <div class="memory-grid" data-album="family"></div>
+        </div>
+      </section>
+      <section class="people-section section-wrap">
+        <div class="section-kicker reveal"><span>03</span><span class="kicker-rule"></span>cinco jeitos de dizer “eu te amo”</div>
+        <div class="section-heading reveal">
+          <div><h2>Um pedacinho do<br><em>nosso coração</em> para você</h2></div>
+          <p>Cada amor tem a sua voz.<br>Toque em cada retrato para receber um abraço em forma de palavras.</p>
+        </div>
+        <div class="people-grid"></div>
+      </section>
+      <section class="closing section-wrap reveal">
+        <span class="closing-flower" aria-hidden="true">✿</span>
+        <span class="eyebrow">o melhor presente é ter você</span>
+        <p>Com todo o nosso amor,<br><em>sua família.</em> <span class="inline-heart">♥</span></p>
+        <span class="closing-stars" aria-hidden="true">✦　✧　✦</span>
+      </section>
+    </main>
+    <footer class="site-footer"><p>Algumas pessoas tornam o mundo mais bonito simplesmente por existirem. <span>Você é uma delas.</span></p><span class="footer-heart" aria-hidden="true">♡</span></footer>
+    <audio class="birthday-audio" src="./music/musica-escolhida.mp3" preload="none" loop></audio>
+  </body>
+</html>
